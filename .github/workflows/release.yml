@@ -27,7 +27,7 @@ jobs:
         id: changeset_action
         uses: changesets/action@v1
         with:
-          public: npm run release-package
+          publish: npm run release-package
         env: 
           GITHUB_TOKEN: ${{ secrets.GIT_CHANGESET_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_CHANGESET_TOKEN }}
